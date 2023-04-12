@@ -1,0 +1,11 @@
+<%= link_to("Back to home", "/main/index") %>
+<h1>Tasks#index</h1>
+
+<hr />
+<h4>List of tasks: </h6>
+<u>hi <%= params[:id]%> </u>
+<ul>
+    <% @tasks.each do |task|%>
+        <li> <%= task %> </li>
+    <% end %>
+</ul>
